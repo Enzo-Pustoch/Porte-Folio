@@ -13,10 +13,12 @@ HTML, CSS, JavaScript
 C#
 Docker
 OpenMediaVault
+
 📂 Projets
 Site de recherche de stage
 Homelab / Serveur NAS personnel
 Divers projets systèmes et réseaux
+
 📫 Contact
 GitHub : https://github.com/Enzo-Pustoch
 Email : enzopustoch8@gmail.com
