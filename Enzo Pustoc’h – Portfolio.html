@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Enzo Pustoc’h – Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;800&family=Instrument+Serif&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--paper:#151515;--ink:#ece9e3;--red:#e03a1e;--muted:#9b9890;--line:#343434;--grid:#1e1e1e}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background-color:var(--paper);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:3rem 3rem;color:var(--ink);overflow-x:clip;font:400 1rem/1.6 "Inter Tight",Arial,Helvetica,sans-serif}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.cover{position:relative;overflow:hidden;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:2rem 1.5rem;background:transparent;color:var(--ink)}
+.mark{position:relative;width:100%;max-width:62rem;padding:2.8rem 0 3rem;margin-bottom:3.5rem;border-top:1px dotted var(--muted);border-bottom:1px dotted var(--muted)}
+.lab{position:absolute;top:.6rem;font-family:"Instrument Serif",Georgia,serif;font-size:1.3rem;line-height:1}
+.l1{left:0}.l2{right:0}
+.tag{position:absolute;left:5%;bottom:0;transform:translateY(55%) rotate(-3deg);padding:.3rem 1rem;background:var(--ink);color:var(--paper);font-family:"Instrument Serif",Georgia,serif;font-size:1.4rem;line-height:1.2;box-shadow:0 .4rem 1rem rgba(0,0,0,.5)}
+.cover>*{position:relative}
+.cover h1{margin:0;color:var(--red);font-weight:800;font-size:clamp(3rem,15vw,10rem);letter-spacing:-.05em;line-height:.95}
+
+.cover a{display:inline-block;padding:.85rem 2rem;border-radius:999px;background:var(--ink);color:var(--paper);font-weight:600;text-decoration:none}
+.cover a:focus-visible{outline:3px solid var(--red);outline-offset:4px}
+header{position:relative;overflow:hidden;padding:4.5rem 0 4rem}
+header::before{content:none}
+header .wrap{position:relative}
+.goal{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(1.3rem,3.6vw,1.7rem);max-width:24rem;line-height:1.2;margin:0 0 3rem;color:var(--muted)}
+h2.name{margin:0;padding:0;border:0;background:none;color:var(--red);font-family:"Inter Tight",Arial,sans-serif;font-weight:800;font-size:clamp(3rem,14vw,9rem);line-height:.9;letter-spacing:-.045em;transform:none}
+.intro{max-width:34rem;margin:2rem 0 0;color:var(--muted)}
+.cta{display:inline-block;margin-top:1.75rem;padding:.8rem 1.6rem;background:var(--ink);color:var(--paper);font-weight:600;text-decoration:none;border-radius:999px}
+section{padding:2.5rem 0}
+h2{margin:0 0 1.5rem;padding:0 0 .4rem;border-bottom:1px dotted var(--muted);font-family:Caveat,"Segoe Print","Comic Sans MS",cursive;font-weight:700;font-size:clamp(2.4rem,6vw,3.4rem);line-height:1;color:var(--ink);transform:rotate(-1deg)}
+.timeline{list-style:none;margin:0;padding:0}
+.timeline li{display:grid;grid-template-columns:9rem 1fr;gap:1.5rem;padding:1.4rem 0;border-top:1px solid var(--line)}
+.timeline li:last-child{border-bottom:1px solid var(--line)}
+.when{font-family:"Instrument Serif",Georgia,serif;font-size:1.3rem;line-height:1.3;color:var(--muted)}
+.timeline h3{margin:0;font-size:1.05rem;font-weight:800}
+.role{margin:.1rem 0 .6rem;color:var(--muted)}
+.timeline ul{margin:0;padding-left:1.1rem}
+.timeline ul li{display:list-item;border:0;padding:.1rem 0;margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:2rem}
+.grid h3{margin:0 0 .8rem;font-size:1.05rem;font-weight:800}
+.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}
+.chips li{padding:.35rem .9rem;margin-bottom:.35rem;border-radius:.6rem;box-shadow:0 0 0 1.5px var(--ink),0 3px 0 1.5px var(--ink);font-size:.9rem;font-weight:600}
+.plain{list-style:none;margin:0;padding:0}
+.plain li{padding:.35rem 0;border-bottom:1px solid var(--line)}
+.edu p{margin:.2rem 0 0;color:var(--muted)}
+.edu div{padding:1.2rem 0;border-top:1px solid var(--line)}
+.edu strong{font-weight:800}
+.edu .hl{border-left:4px solid var(--red);padding-left:1rem}
+.scr{position:absolute;width:11rem;height:auto;color:var(--ink);opacity:.85;pointer-events:none}
+.cover .s1{left:4%;bottom:6%;transform:rotate(-8deg)}
+.cover .s2{right:5%;top:7%;width:8rem;transform:rotate(12deg)}
+.idx{display:flex;flex-wrap:wrap;gap:1.2rem 2.2rem;margin:3rem 0 0;padding:0;list-style:none}
+.idx a{display:block;text-decoration:none}
+.dock{position:relative;display:inline-block;margin-top:1.5rem}
+.dock::before{content:"";position:absolute;inset:0;border-radius:1rem;background:rgba(0,0,0,.2);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,.1);box-shadow:0 25px 50px -12px rgba(0,0,0,.5)}
+.dock ul{position:relative;display:flex;align-items:flex-end;gap:.5rem;margin:0;padding:.5rem;list-style:none}
+.tile{display:flex;align-items:center;justify-content:center;width:3.5rem;height:3.5rem;border-radius:.75rem;color:#fff;clip-path:url(#squircleClip);box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);transition:all .3s ease-out}
+.tile:hover,.tile:focus-visible{transform:translateY(-.5rem) scale(1.1);box-shadow:0 25px 50px -12px rgba(0,0,0,.5)}
+.tile svg{width:2rem;height:2rem}
+.t-mail{background:linear-gradient(to bottom right,#dc2626,#991b1b);border:1px solid rgba(239,68,68,.5)}
+.t-git{background:linear-gradient(to bottom right,#374151,#111827);border:1px solid rgba(75,85,99,.5)}
+.t-in{background:linear-gradient(to bottom right,#2563eb,#1e40af);border:1px solid rgba(59,130,246,.5)}
+
+
+
+
+.idx b{display:block;font-weight:600;font-size:1.2rem}
+
+.idx span{font-size:.85rem;color:var(--muted)}
+@media (max-width:40rem){.scr{width:6rem}.cover .s2{width:5rem}}
+footer{position:relative;padding:3rem 0 4rem}
+footer p{margin:.4rem 0}
+.mail{font-size:clamp(1.1rem,4vw,1.7rem);font-weight:800}
+@media (max-width:40rem){.timeline li{grid-template-columns:1fr;gap:.2rem}header{padding-top:3.5rem}.goal{margin-bottom:3.5rem}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><clipPath id="squircleClip" clipPathUnits="objectBoundingBox"><path d="M 0,0.5 C 0,0 0,0 0.5,0 S 1,0 1,0.5 1,1 0.5,1 0,1 0,0.5"/></clipPath></defs></svg>
+<div class="cover">
+  <div class="mark">
+    <span class="lab l1">Systèmes et réseaux</span>
+    <h1>Portfolio</h1>
+    <span class="tag">Enzo Pustoc’h</span>
+    <span class="lab l2">2026</span>
+  </div>
+  <svg class="scr s1" viewBox="0 0 200 80" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" aria-hidden="true"><path d="M5 60C40 5 70 75 100 30S160 70 195 15"/><path d="M8 72C50 25 80 78 112 42S165 76 196 30"/></svg>
+  <svg class="scr s2" viewBox="0 0 120 80" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" aria-hidden="true"><path d="M5 72L40 10M25 74L60 12M45 76L80 14M65 76L100 14M85 76L118 18"/></svg>
+  <a href="#presentation">Découvrir mon parcours</a>
+</div>
+<header id="presentation">
+  <div class="wrap">
+    <p class="goal">Stage en administration systèmes et réseaux</p>
+    <h2 class="name">ENZO<br>PUSTOC’H</h2>
+    <p class="intro">Étudiant en première année de BTS SIO au lycée Félix Le Dantec, à Lannion.</p>
+    <a class="cta" href="#contact">Me contacter</a>
+    <ul class="idx">
+      <li><a href="#experiences"><b>01</b><span>Expériences professionnelles</span></a></li>
+      <li><a href="#scolaire"><b>02</b><span>Projets scolaires</span></a></li>
+      <li><a href="#perso"><b>03</b><span>Projets personnels</span></a></li>
+      <li><a href="#competences"><b>04</b><span>Compétences</span></a></li>
+      <li><a href="#formation"><b>05</b><span>Formation</span></a></li>
+      <li><a href="#contact"><b>06</b><span>Contact</span></a></li>
+    </ul>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="experiences">
+    <h2>Expériences professionnelles</h2>
+    <ol class="timeline">
+      <li>
+        <div class="when">Janvier 2026</div>
+        <div><h3>Incognito Saint-Brieuc</h3><p class="role">Stage de personnalisation textile</p>
+          <ul><li>Personnalisation de textiles (logiciel de dessin, presse à chaud, brodeuse)</li><li>Création de contenus pour les réseaux sociaux</li></ul></div>
+      </li>
+      <li>
+        <div class="when">Décembre 2025</div>
+        <div><h3>Préfecture de Saint-Brieuc</h3><p class="role">Stage au service informatique</p>
+          <ul><li>Préparation et configuration d’ordinateurs</li><li>Support technique et résolution de problèmes informatiques</li></ul></div>
+      </li>
+      <li>
+        <div class="when">Juin–juillet 2025</div>
+        <div><h3>Préfecture de Saint-Brieuc</h3><p class="role">Stage au service informatique</p>
+          <ul><li>Installation et configuration de systèmes de visioconférence</li><li>Préparation et déploiement de postes de travail</li><li>Diagnostic et résolution de pannes informatiques</li></ul></div>
+      </li>
+      <li>
+        <div class="when">Novembre 2024</div>
+        <div><h3>Lycée Sacré-Cœur, Saint-Brieuc</h3><p class="role">Stage informatique</p>
+          <ul><li>Préparation et câblage d’un serveur</li><li>Installation et maintenance d’un serveur sous Windows</li></ul></div>
+      </li>
+      <li>
+        <div class="when">Avril 2024</div>
+        <div><h3>LEDU Industrie</h3><p class="role">Stage en électricité</p>
+          <ul><li>Installation et raccordement de matériel électrique en armoires</li><li>Tests de fonctionnement et vérification des installations</li></ul></div>
+      </li>
+      <li>
+        <div class="when">Octobre 2023</div>
+        <div><h3>LEDU</h3><p class="role">Stage au service informatique</p>
+          <ul><li>Maintenance et dépannage d’ordinateurs</li><li>Initiation au codage</li><li>Maintenance et gestion de réseaux informatiques</li></ul></div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="scolaire">
+    <h2>Projets scolaires</h2>
+    <div class="grid">
+      <div><h3>Site de recherche de stage</h3>
+        <p class="role">Projet de terminale, Bac pro CIEL, réalisé en équipe</p>
+        <ul><li>Site web qui aide les élèves à trouver un stage : choix de la formation, carte interactive des zones et liste des entreprises avec recherche et filtres</li><li>Technologies : HTML, CSS, JavaScript, base de données Supabase</li><li>Mon rôle : structure de toutes les pages et connexion à la base de données pour afficher les entreprises selon les filtres</li><li>Avec un camarade : connexion de l’interface d’administration à la base de données</li></ul>
+        <p style="margin-top:.8rem"><a href="https://enzo-pustoch.github.io/Site-de-Recherche-de-stage/" target="_blank" rel="noopener">Voir la démo</a> (données fictives) &nbsp; <a href="https://github.com/Enzo-Pustoch/Site-de-Recherche-de-stage" target="_blank" rel="noopener">Voir le code</a></p></div>
+    </div>
+  </section>
+
+  <section id="perso">
+    <h2>Projets personnels</h2>
+    <div class="grid">
+      <div><h3>Serveur NAS</h3>
+        <ul><li>Installation et configuration d’un serveur NAS personnel avec OpenMediaVault</li><li>Mise en place de conteneurs Docker</li><li>Mise en place d’un cloud pour photos et vidéos (Nextcloud, Jellyfin, Immich)</li><p style="margin-top:.8rem"><a href="https://github.com/Enzo-Pustoch/Homelab-Nas" target="_blank" rel="noopener">Plus d'éxplication</a></p></ul></div>
+      <div><h3>Gestion de réseaux</h3>
+        <ul><li>Configuration des adresses IP</li><li>Création de profils réseau avec NetworkManager : accès au NAS en IP fixe et accès à Internet via le partage de connexion Windows</li></ul></div>
+    </div>
+  </section>
+
+  <section id="competences">
+    <h2>Compétences</h2>
+    <div class="grid">
+      <div><h3>Systèmes et réseaux</h3>
+        <ul class="chips"><li>Machines virtuelles</li><li>Réseaux locaux</li><li>Administration de services</li><li>Sécurisation d’infrastructure</li><li>Dépannage réseau et matériel</li></ul></div>
+      <div><h3>Systèmes d’exploitation</h3>
+        <ul class="chips"><li>Linux</li><li>Windows</li><li>macOS</li></ul></div>
+      <div><h3>Langages</h3>
+        <ul class="chips"><li>HTML</li><li>CSS</li><li>C#</li><li>Bash</li></ul></div>
+    </div>
+  </section>
+
+  <section id="formation">
+    <h2>Formation et certifications</h2>
+    <div class="grid">
+      <div class="edu">
+        <div><strong>BTS SIO</strong> (Services informatiques aux organisations)<p>Lycée Félix Le Dantec, Lannion. En cours.</p></div>
+        <div><strong>Bac pro CIEL</strong>, obtenu avec mention<p>Lycée Sacré-Cœur La Salle, Saint-Brieuc.</p></div>
+        <div class="hl"><strong>Diplôme SST</strong> (sauveteur secouriste du travail)<p>Premiers secours en milieu professionnel.</p></div>
+      </div>
+      <div><h3>Certifications</h3>
+        <ul class="plain"><li>CyberMalveillance.gouv.fr</li><li>CNIL : RGPD</li><li>Linux Unhatched</li></ul>
+        <h3 style="margin-top:1.5rem">Langues</h3>
+        <ul class="plain"><li>Français</li><li>Anglais</li></ul>
+        <h3 style="margin-top:1.5rem">Permis</h3>
+        <ul class="plain"><li>Permis B</li></ul></div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>Je cherche un stage en administration systèmes et réseaux. Écris-moi :</p>
+    <div class="dock"><ul>
+      <li><a class="tile t-mail" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=enzopustoch8@gmail.com" target="_blank" rel="noopener" aria-label="Gmail"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></a></li>
+      <li><a class="tile t-git" href="https://github.com/Enzo-Pustoch" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a></li>
+    </ul></div>
+  </div>
+</footer>
+</body>
+</html>
